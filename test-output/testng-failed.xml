@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="kugushina.FirstHomework">
+      <class name="kugushina.SecondHomework_negative">
         <methods>
           <include name="tearDown"/>
           <include name="testUntitled"/>
           <include name="init"/>
         </methods>
-      </class> <!-- kugushina.FirstHomework -->
+      </class> <!-- kugushina.SecondHomework_negative -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
