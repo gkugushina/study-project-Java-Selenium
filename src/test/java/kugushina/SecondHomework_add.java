@@ -10,7 +10,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class SecondHomework extends TestBase {
+public class SecondHomework_add extends TestBase {
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
 
@@ -21,16 +21,12 @@ public class SecondHomework extends TestBase {
     driver.findElement(By.name("password")).clear();
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.name("submit")).click();
-    //driver.findElement(By.cssSelector("img[alt=\"Add movie\"]")).click();
-    //driver.findElement(By.name("name")).clear();
-    //driver.findElement(By.name("name")).sendKeys("Марсианин");
-    //driver.findElement(By.name("year")).clear();
-    //driver.findElement(By.name("year")).sendKeys("2015");
-    //driver.findElement(By.cssSelector("img[alt=\"Save\"]")).click();
-    //driver.findElement(By.linkText("Home")).click();
-    driver.findElement(By.className("movie_box")).click();
-    driver.findElement(By.cssSelector("img[alt=\"Remove\"]")).click();
-    assertTrue(closeAlertAndGetItsText().matches("^Are you sure you want to remove this[\\s\\S]$"));
+    driver.findElement(By.cssSelector("img[alt=\"Add movie\"]")).click();
+    driver.findElement(By.name("name")).clear();
+    driver.findElement(By.name("name")).sendKeys("Марсианин");
+    driver.findElement(By.name("year")).clear();
+    driver.findElement(By.name("year")).sendKeys("2015");
+    driver.findElement(By.cssSelector("img[alt=\"Save\"]")).click();
   }
 
   private boolean isElementPresent(By by) {
