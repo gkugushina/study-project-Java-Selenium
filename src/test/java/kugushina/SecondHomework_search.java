@@ -1,13 +1,19 @@
+
+
 package kugushina;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.*;
 import org.testng.annotations.*;
+
+import com.thoughtworks.selenium.webdriven.commands.WaitForCondition;
+
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -25,12 +31,21 @@ public class SecondHomework_search extends TestBase {
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.name("submit")).click();
     driver.findElement(By.cssSelector("img[alt=\"Add movie\"]")).click();
-    driver.findElement(By.id("imdbsearch")).clear();
-    driver.findElement(By.id("imdbsearch")).sendKeys("побег");
-    driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
+    driver.findElement(By.name("name")).clear();
+    driver.findElement(By.name("name")).sendKeys("Багровый пик");
+    driver.findElement(By.name("year")).clear();
+    driver.findElement(By.name("year")).sendKeys("2015");
+    driver.findElement(By.cssSelector("img[alt=\"Save\"]")).click();
+    driver.findElement(By.linkText("Home")).click();
+    driver.findElement(By.id("q")).clear();
+    driver.findElement(By.id("q")).sendKeys("бл");
+    driver.findElement(By.id("q")).sendKeys(Keys.ENTER);
+    Thread.sleep(40);
+    driver.findElement(By.className("movie_box"));
    
-    driver.findElement(By.className("imdbresult"));
-   
+    
+  
+    
   }
 
   private boolean isElementPresent(By by) {
@@ -57,4 +72,4 @@ public class SecondHomework_search extends TestBase {
     }
   }
 }
-  
+ 
