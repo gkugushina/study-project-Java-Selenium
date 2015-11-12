@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="10142" started-at="2015-10-29T14:36:25Z" finished-at="2015-10-29T14:36:35Z">
+  <suite name="Tests" duration-ms="7062" started-at="2015-11-12T14:51:48Z" finished-at="2015-11-12T14:51:55Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="10142" started-at="2015-10-29T14:36:25Z" finished-at="2015-10-29T14:36:35Z">
+    <test name="Test1" duration-ms="7062" started-at="2015-11-12T14:51:48Z" finished-at="2015-11-12T14:51:55Z">
       <class name="kugushina.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:kugushina.LoginTest@39ba5a14]" name="init" is-config="true" duration-ms="8808" started-at="2015-10-29T17:36:25Z" finished-at="2015-10-29T17:36:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:kugushina.LoginTest@6a5fc7f7]" name="init" is-config="true" duration-ms="4672" started-at="2015-11-12T17:51:48Z" finished-at="2015-11-12T17:51:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:kugushina.LoginTest@39ba5a14]" name="testUntitled" duration-ms="1327" started-at="2015-10-29T17:36:34Z" finished-at="2015-10-29T17:36:35Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:kugushina.LoginTest@6a5fc7f7]" name="mayBeLogout" is-config="true" duration-ms="630" started-at="2015-11-12T17:51:53Z" finished-at="2015-11-12T17:51:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:kugushina.LoginTest@39ba5a14]" name="tearDown" is-config="true" duration-ms="506" started-at="2015-10-29T17:36:35Z" finished-at="2015-10-29T17:36:36Z">
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="testLoginFailed()[pri:0, instance:kugushina.LoginTest@6a5fc7f7]" name="testLoginFailed" duration-ms="843" started-at="2015-11-12T17:51:54Z" finished-at="2015-11-12T17:51:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- testLoginFailed -->
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:kugushina.LoginTest@6a5fc7f7]" name="mayBeLogout" is-config="true" duration-ms="6" started-at="2015-11-12T17:51:54Z" finished-at="2015-11-12T17:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="testLoginOK()[pri:0, instance:kugushina.LoginTest@6a5fc7f7]" name="testLoginOK" duration-ms="902" started-at="2015-11-12T17:51:54Z" finished-at="2015-11-12T17:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginOK -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:kugushina.LoginTest@6a5fc7f7]" name="stop" is-config="true" duration-ms="698" started-at="2015-11-12T17:51:55Z" finished-at="2015-11-12T17:51:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
       </class> <!-- kugushina.LoginTest -->
     </test> <!-- Test1 -->
   </suite> <!-- Tests -->

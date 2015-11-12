@@ -1,93 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38708" started-at="2015-11-09T10:58:15Z" finished-at="2015-11-09T10:58:53Z">
+  <suite name="Default suite" duration-ms="12381" started-at="2015-11-12T16:56:19Z" finished-at="2015-11-12T16:56:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38708" started-at="2015-11-09T10:58:15Z" finished-at="2015-11-09T10:58:53Z">
-      <class name="kugushina.SecondHomework_search_negative">
-        <test-method status="PASS" signature="init()[pri:0, instance:kugushina.SecondHomework_search_negative@7dc36524]" name="init" is-config="true" duration-ms="6174" started-at="2015-11-09T13:58:15Z" finished-at="2015-11-09T13:58:21Z">
+    <test name="Default test" duration-ms="12381" started-at="2015-11-12T16:56:19Z" finished-at="2015-11-12T16:56:32Z">
+      <class name="kugushina.SecondHomework_search">
+        <test-method status="PASS" signature="init()[pri:0, instance:kugushina.SecondHomework_search@7dc36524]" name="init" is-config="true" duration-ms="6062" started-at="2015-11-12T19:56:19Z" finished-at="2015-11-12T19:56:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="testUntitled()[pri:0, instance:kugushina.SecondHomework_search_negative@7dc36524]" name="testUntitled" duration-ms="32519" started-at="2015-11-09T13:58:21Z" finished-at="2015-11-09T13:58:53Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"class name","selector":"movie_box"}
-Command duration or timeout: 30.12 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'Kugushinapc', ip: '192.168.0.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 723e8222-a46b-471d-8f1b-35d05a442d06
-*** Element info: {Using=class name, value=movie_box}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"class name","selector":"movie_box"}
-Command duration or timeout: 30.12 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'Kugushinapc', ip: '192.168.0.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 723e8222-a46b-471d-8f1b-35d05a442d06
-*** Element info: {Using=class name, value=movie_box}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:439)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:388)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at kugushina.SecondHomework_search_negative.testUntitled(SecondHomework_search_negative.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"class name","selector":"movie_box"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'Kugushinapc', ip: '192.168.0.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/GALINA~1.KUG/AppData/Local/Temp/anonymous1129955050036704892webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/GALINA~1.KUG/AppData/Local/Temp/anonymous1129955050036704892webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:kugushina.SecondHomework_search@7dc36524]" name="testUntitled" duration-ms="6309" started-at="2015-11-12T19:56:25Z" finished-at="2015-11-12T19:56:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:kugushina.SecondHomework_search_negative@7dc36524]" name="tearDown" is-config="true" duration-ms="416" started-at="2015-11-09T13:58:53Z" finished-at="2015-11-09T13:58:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:kugushina.SecondHomework_search@7dc36524]" name="tearDown" is-config="true" duration-ms="424" started-at="2015-11-12T19:56:32Z" finished-at="2015-11-12T19:56:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- kugushina.SecondHomework_search_negative -->
+      </class> <!-- kugushina.SecondHomework_search -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

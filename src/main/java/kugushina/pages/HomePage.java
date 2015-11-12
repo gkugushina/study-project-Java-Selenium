@@ -6,8 +6,10 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-/**
+/*
  * Sample page
+ * 
+ * @author Sebastiano Armeli-Battana
  */
 public class HomePage extends Page {
 
@@ -17,8 +19,8 @@ public class HomePage extends Page {
 	@CacheLookup
 	private WebElement h1Element;
 	
-	public HomePage(WebDriver webDriver) {
-		super(webDriver);
+	public HomePage(PageManager pages) {
+		super(pages);
 	}
 	
 	public String getH1() {

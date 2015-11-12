@@ -38,12 +38,16 @@ public class SecondHomework_search extends TestBase {
     driver.findElement(By.cssSelector("img[alt=\"Save\"]")).click();
     driver.findElement(By.linkText("Home")).click();
     driver.findElement(By.id("q")).clear();
-    driver.findElement(By.id("q")).sendKeys("бл");
+    driver.findElement(By.id("q")).sendKeys("пик");
     driver.findElement(By.id("q")).sendKeys(Keys.ENTER);
-    Thread.sleep(40);
-    driver.findElement(By.className("movie_box"));
+    Thread.sleep(4000);
+    int result = driver.findElements(By.className("movie_box")).size();
+   int result1 = driver.findElements(By.xpath("//*[@class='title'][contains(.,'пик')]")).size(); 
    
-    
+    if (result==result1) {}
+  else {
+    	throw new Error("Поиск не верен");
+   }
   
     
   }
