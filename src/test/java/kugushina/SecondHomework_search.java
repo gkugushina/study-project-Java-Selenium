@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.*;
 import org.testng.annotations.*;
 
+import com.thoughtworks.selenium.Wait;
 import com.thoughtworks.selenium.webdriven.commands.WaitForCondition;
 
 import static org.junit.Assert.*;
@@ -15,6 +16,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
@@ -22,6 +24,8 @@ import org.openqa.selenium.support.ui.Select;
 public class SecondHomework_search extends TestBase {
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
+  
+ 
 
   @Test
   public void testUntitled() throws Exception {    driver.get(baseUrl + "/php4dvd/");
@@ -40,10 +44,13 @@ public class SecondHomework_search extends TestBase {
     driver.findElement(By.id("q")).clear();
     driver.findElement(By.id("q")).sendKeys("пик");
     driver.findElement(By.id("q")).sendKeys(Keys.ENTER);
-    Thread.sleep(4000);
+    WebDriverWait wait = new WebDriverWait(driver, 30);
+    wait.until(ExpectedConditions.urlContains("search"));
+    int result1 = driver.findElements(By.xpath("//*[@class='title'][contains(.,'пик')]")).size(); 
     int result = driver.findElements(By.className("movie_box")).size();
-   int result1 = driver.findElements(By.xpath("//*[@class='title'][contains(.,'пик')]")).size(); 
    
+   System.out.println(result);
+   System.out.println(result1);
     if (result==result1) {}
   else {
     	throw new Error("Поиск не верен");

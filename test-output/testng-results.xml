@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12381" started-at="2015-11-12T16:56:19Z" finished-at="2015-11-12T16:56:32Z">
+  <suite name="Default suite" duration-ms="9167" started-at="2015-11-16T10:35:32Z" finished-at="2015-11-16T10:35:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12381" started-at="2015-11-12T16:56:19Z" finished-at="2015-11-12T16:56:32Z">
+    <test name="Default test" duration-ms="9167" started-at="2015-11-16T10:35:32Z" finished-at="2015-11-16T10:35:42Z">
       <class name="kugushina.SecondHomework_search">
-        <test-method status="PASS" signature="init()[pri:0, instance:kugushina.SecondHomework_search@7dc36524]" name="init" is-config="true" duration-ms="6062" started-at="2015-11-12T19:56:19Z" finished-at="2015-11-12T19:56:25Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:kugushina.SecondHomework_search@d041cf]" name="init" is-config="true" duration-ms="6374" started-at="2015-11-16T13:35:32Z" finished-at="2015-11-16T13:35:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:kugushina.SecondHomework_search@7dc36524]" name="testUntitled" duration-ms="6309" started-at="2015-11-12T19:56:25Z" finished-at="2015-11-12T19:56:32Z">
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:kugushina.SecondHomework_search@d041cf]" name="testUntitled" duration-ms="2782" started-at="2015-11-16T13:35:39Z" finished-at="2015-11-16T13:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:kugushina.SecondHomework_search@7dc36524]" name="tearDown" is-config="true" duration-ms="424" started-at="2015-11-12T19:56:32Z" finished-at="2015-11-12T19:56:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:kugushina.SecondHomework_search@d041cf]" name="tearDown" is-config="true" duration-ms="407" started-at="2015-11-16T13:35:42Z" finished-at="2015-11-16T13:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
